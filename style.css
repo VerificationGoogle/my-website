@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Sans;
+    src: url(fonts/EudoxusSans.ttf);
+}
+
+@font-face {
+    font-family: Shrimp;
+    src: url(fonts/SHRIMP.ttf);
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(114, 78, 117), rgb(59, 23, 59));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.678);
+    width: 1350px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 10px 50px;
+    background-image: linear-gradient(to bottom, black, rgb(44, 0, 44));
+}
+
+#head {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 30px;
+        filter: brightness(70%);
+    }
+}
+
+.titles {
+    width: 250px;
+    text-align: center;
+}
+
+.titles a {
+    font-size: 13px;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: Sans;
+    color: white;
+}
+
+.titles a::selection {
+    background-color: purple;
+}
+
+#main {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainleft {
+    h1 {
+    font-size: 60px;
+    color: white;
+    font-family: Shrimp;
+    }
+
+    h1::selection {
+        background-color: purple;
+    }
+}
+
+#mainleft > span {
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Sans;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: rgba(139, 0, 139, 0.404);
+    color: rgb(230, 117, 186);
+}
+
+#mainleft > span::selection {
+    color: white;
+    background-color: black;
+}
+
+
+#icons {
+    font-family: Sans;
+    border-radius: 30px;
+    padding: 24px;
+    background-color: rgb(36, 0, 28);
+    color: white;
+    width: 550px;
+}
+
+table {
+    width: 100%;
+}
+
+.tdflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+td {
+    padding: 20px;
+}
+
+td span::selection {
+    background-color: purple;
+    color: white;
+}
+
+.squares {
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(250, 0, 208);
+}
+
+#gamer {
+    height: 600px;
+    border-radius: 50px;
+    border-radius: 0px 0px 50px 50px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#btncontainer {
+    margin: 40px 0px;
+}
+
+.buttons {
+    cursor: pointer;
+    font-family: Sans;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 45px;
+    width: 150px;
+}
+
+#btn1 {
+    box-shadow: 0px 0px 50px rgba(0, 255, 255, 0.432);
+    border: none;
+    color: black;
+    background-color: aqua;
+}
+
+#btn2 {
+    color: aqua;
+    border: none;
+    background-color: unset;
+}
