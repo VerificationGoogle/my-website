@@ -182,9 +182,61 @@ td span::selection {
     color: aqua;
     border: none;
     background-color: unset;
-    transition: border 0.3s ease;
+    transition: color 0.3s ease, border 0.3s ease;
 }
 
 #btn2:hover {
     border: 1px solid aqua;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        align-items: normal;
+    }
+
+    #container {
+        padding: 10px 10px;
+    }
+
+    #head {
+        padding: 10px;
+    }
+
+    .titles {
+        width: auto;
+        text-align: center;
+    }
+
+    #helmet {
+        display: none;
+    }
+    
+    .titles a {
+        font-size: 10px;
+        padding: 0px 0px;
+    }
+
+    #main {
+        display: inline-block;
+    }
+
+    #mainleft {
+
+        h1 {
+            font-size: 42px;
+        }
+    }
+
+    #icons {
+        width: 280px;
+
+        td {
+        display: flex;
+        }
+    }
+
+    #gamer {
+        display: none;
+    }
+
 }
