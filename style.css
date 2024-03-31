@@ -48,6 +48,11 @@ body {
     text-decoration: none;
     font-family: Sans;
     color: white;
+    transition: color 0.3s ease;
+}
+
+.titles a:hover {
+    color: rgb(209, 1, 209);
 }
 
 .titles a::selection {
@@ -103,9 +108,15 @@ table {
 }
 
 .tdflex {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: scale 0.3s ease;
+}
+
+.tdflex:hover {
+    scale: 107%;
 }
 
 td {
@@ -118,7 +129,6 @@ td span::selection {
 }
 
 .squares {
-    cursor: pointer;
     border-radius: 7px;
     display: flex;
     justify-content: center;
@@ -126,11 +136,15 @@ td span::selection {
     width: 40px;
     height: 40px;
     background-color: rgb(250, 0, 208);
+    transition: box-shadow 0.3s ease;
+}
+
+.tdflex:hover .squares {
+    box-shadow: 0px 0px 10px rgb(250, 0, 208)
 }
 
 #gamer {
     height: 600px;
-    border-radius: 50px;
     border-radius: 0px 0px 50px 50px;
     border-bottom: 1px solid white;
     border-left: 1px solid white;
@@ -154,10 +168,23 @@ td span::selection {
     border: none;
     color: black;
     background-color: aqua;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+#btn1:hover {
+    background-color: unset;
+    color: white;
+    box-shadow: none;
+    border: 1px solid aqua;
 }
 
 #btn2 {
     color: aqua;
     border: none;
     background-color: unset;
+    transition: border 0.3s ease;
+}
+
+#btn2:hover {
+    border: 1px solid aqua;
 }
